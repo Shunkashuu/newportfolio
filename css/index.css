@@ -1,0 +1,130 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins';
+    /*background: linear-gradient(90deg, #d53369 0%, #daae51 100%);*/
+}
+
+/*Mobile first*/
+
+.container {
+    text-align: center;
+    margin: 10%;
+    max-width: 100%;   
+}
+
+nav {
+    width: 100%;
+    background: #333333;
+}
+
+ul {
+    width: 80%;
+    margin: 0 auto;
+    padding: 0;
+}
+
+ul li {
+    color: white;
+    list-style: none;
+    display: inline-block;
+    padding: 20px;
+}
+
+ul li:hover {
+    background: #e91e63;
+}
+
+ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.toggle {
+    width: 100%;
+    padding: 10px 20px;
+    background: #333333;
+    text-align: right;
+    color: #fff;
+    font-size: 30px;
+    display: none;
+}
+
+.menu {
+    cursor: pointer;
+}
+
+/*header p, h2, h1 {
+    color: #fff;
+}*/
+
+.construction {
+    font-size: 30px;
+}
+
+.avatar img {
+    margin: 30px auto;
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+}
+
+.about p {
+    margin: 20px 0;
+}
+
+.bouton-cv a {
+    display: inline-block;
+    padding: 10px 20px;
+    background: yellowgreen;
+    border-radius: 6px;
+    margin-top: 10px;
+    text-decoration: none;
+    font-weight: 600;
+    color: #fff;
+}
+
+.projet img {
+    width: 300px;
+    height: 200px;
+    border-radius: 20px;
+}
+
+.social {
+    border-radius: 100%;
+    display: inline-flex;
+    width: 3.25rem;
+    height: 3.25rem;
+    font-size: 1.25rem;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid black;
+    color: black;
+    transition: color 0.15s ease-in-out, 
+                background-color 0.15s ease-in-out, 
+                border-color 0.15s ease-in-out, 
+                box-shadow 0.15s ease-in-out;
+}
+
+.social:hover{
+	background: black;
+}
+
+@media (max-width:768px) {
+    .toggle {
+        display: block;
+    }
+    ul {
+        width: 100%;
+        display: none;
+    }
+    ul li {
+        display: block;
+        text-align: center;
+    }
+    .active {
+        display: block;
+    }
+}
+
