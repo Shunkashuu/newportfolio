@@ -1,4 +1,4 @@
-//modal trigger
+/**modal trigger
 var trigger = document.querySelector(".trigger");
 var trigger2 = document.querySelector(".trigger2");
 var trigger3 = document.querySelector(".trigger3");
@@ -25,4 +25,4 @@ trigger4.addEventListener("click", toggleModal);
 trigger5.addEventListener("click", toggleModal);
 trigger6.addEventListener("click", toggleModal);
 closeButton.addEventListener("click", toggleModal);
-window.addEventListener("click", windowOnClick);
+window.addEventListener("click", windowOnClick);**/

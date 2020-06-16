@@ -21,6 +21,10 @@ p, h1, h2 {
     color: #fff;
 }
 
+p {
+    font-size: 18px;
+}
+
 /*------Nav style--------*/
 nav {
     width: 100%;
@@ -66,7 +70,7 @@ ul li a:hover{
 }
 
 /*-------Main style------*/
-.construction {
+.construction p {
     font-size: 30px;
 }
 
@@ -81,6 +85,7 @@ ul li a:hover{
     margin: 20px;
 }
 
+.bouton-projet a,
 .bouton-cv a {
     display: inline-block;
     padding: 10px 20px;
@@ -93,6 +98,7 @@ ul li a:hover{
     transition: .3s;
 }
 
+.bouton-projet a:hover,
 .bouton-cv a:hover {
     background: #fff;
     border: 2px solid #fff;
@@ -100,14 +106,57 @@ ul li a:hover{
     cursor: pointer;
 }
 
-/*------Projects pictures style------*/
-.projet img {
-    width: 300px;
-    height: 200px;
+/*------Cards style------*/
+.card {
     border-radius: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    background: #fff;
+    margin: 30px 0;
+    width: 100%;
+}
+
+.card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.4);
+}
+
+.card p {
+    color: #333333;
+    padding: 0 30px;
+    padding-top: 30px;
+}
+
+.card img {
+    border-radius: 5px 5px 0 0;
+    cursor: pointer;
+    width: 100%;
+}
+
+.bouton-projet {
+    padding: 30px;
+}
+
+.bouton-projet a {
+    display: inline-block;
+    padding: 10px 20px;
+    background: none;
+    border-radius: 6px;
+    margin-top: 10px;
+    text-decoration: none;
+    border: 2px solid #333333;
+    color: #333333;
+    transition: .3s;
+}
+
+.bouton-projet a:hover {
+    background: #333333;
+    border: 2px solid #333333;
+    color: #fff;
     cursor: pointer;
 }
 
+
+/*------Projects pictures style
 .modal {
     position: fixed;
     left: 0;
@@ -156,7 +205,7 @@ ul li a:hover{
     visibility: visible;
     transform: scale(1.0);
     transition: visibility 0s linear 0s, opacity 0.25s 0s, transform 0.25s;
-}
+}*/
 
 /*------Social buttons style------*/
 .social {
