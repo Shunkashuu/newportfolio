@@ -15,16 +15,15 @@
             <i class="fa fa-bars menu" aria-hidden="true"></i>
         </div>
         <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">About</a></li>
+            <li><a href="#home">Accueil</a></li>
+            <li><a href="#about">A propos de moi</a></li>
             <li><a href="#portfolio">Portfolio</a></li>
             <li><a href="#contact">Contact</a></li>
         </ul>
     </nav>
 
     <!--Header-->
-    <header class="container">
-
+    <header class="container" id="header" data-spy>
         <div class="construction">
             <p>En construction</p>
         </div>
@@ -33,12 +32,12 @@
             <img src="img/avatar.jpg" alt="Avatar">
         </div>
 
-        <div class="title">
+        <div class="title" id="about">
             <h2>Marion GAJIC</h2>
             <h1>Développeuse junior Frontend</h1>
         </div>
 
-        <div id="about">
+        <div class="about">
             <h2>A propos de moi</h2>
             <p>Actuellement en formation avec OpenClassrooms pour obtenir le titre de niveau 6
                 Développeur d'application - Frontend, j'ai déjà effectué plusieurs projets qui 
@@ -48,53 +47,103 @@
                 J'ai commencé ma formation en mars 2020, j'en suis actuellement au 4ème projet sur un total de 9.
             </p>
             <div class="bouton-cv">
-                <a href="cv.html"><i class="fas fa-search"></i>Voir mon cv</a>
+                <a href="cv.html" target="blank"><i class="fas fa-search"></i>  Voir mon cv</a>
+            </div>
+        </div>
+    </header>
+
+    <!--Section Portfolio-->
+    <main class="container" id="portfolio" data-spy>
+        <h2>Portfolio</h2>
+        
+        <div class="projet">
+            <img src="img/cabin.png" alt="Chalet" class="trigger"><!--Modal-->
+                <div id="modal" class="modal">
+                    <div class="modal-content">
+                        <span class="close-button">×</span>
+                        <h3>Chalets et Caviar</h3>
+                        <img src="img/chalets.JPG" alt="Chalets">
+                        <p>Description du site</p>
+                        <button><a href="http://chaletscaviar.eu/" target="blank">Voir le site</a></button>
+                    </div>
+                </div>
+        </div>
+
+        <div class="projet">
+            <img src="img/cake.png" alt="Cake" class="trigger2">
+            <div class="modal">
+                <div class="modal-content">
+                    <span class="close-button">×</span>
+                    <h3>Croustishop</h3>
+                    <img src="img/croustishop.JPG" alt="Burger">
+                    <p>Description du site</p>
+                    <button><a href="http://croustishop.mariongajic.fr/">Voir le site</a></button>
+                </div>
             </div>
         </div>
 
-    </header>
+        <div class="projet">
+            <img src="img/circus.png" alt="Circus" class="trigger3">
+            <div class="modal">
+                <div class="modal-content">
+                    <span class="close-button">×</span>
+                    <h3>Festival des films de plein air</h3>
+                    <img src="img/festival.JPG" alt="Festival des films">
+                    <p>Description du site</p>
+                    <button><a href="http://festival-des-films.mariongajic.fr/">Voir le site</a></button>
+                </div>
+            </div>
+        </div>
 
-    <main class="container">
-        <h2 id="portfolio">Portfolio</h2>
         <div class="projet">
-            <!--Icones cliquables de mes projets-->
-            <img src="img/cabin.png" alt="Chalet"><!--Modal au click-->
+            <img src="img/game.png" alt="Gamingpad" class="trigger4">
+            <div class="modal">
+                <div class="modal-content">
+                    <span class="close-button">×</span>
+                    <h3>Jeu de plateau en tour par tour</h3>
+                    <img src="" alt="Burger">
+                    <p>Description du site</p>
+                    <button><a href="#">Voir le site</a></button>
+                </div>
+            </div>
         </div>
+
         <div class="projet">
-            <!--Icones cliquables de mes projets-->
-            <img src="img/cake.png" alt="Cake"><!--Modal au click-->
+            <img src="img/safe.png" alt="Box" class="trigger5">
+            <div class="modal">
+                <div class="modal-content">
+                    <span class="close-button">×</span>
+                    <h3>Générateur de citations</h3>
+                    <img src="img/citations.JPG" alt="Générateur">
+                    <p>Description du site</p>
+                    <button><a href="http://citations.mariongajic.fr/">Voir le site</a></button>
+                </div>
+            </div>
         </div>
+
         <div class="projet">
-            <!--Icones cliquables de mes projets-->
-            <img src="img/circus.png" alt="Circus"><!--Modal au click-->
-        </div>
-        <div class="projet">
-            <!--Icones cliquables de mes projets-->
-            <img src="img/game.png" alt="Gamingpad"><!--Modal au click-->
-        </div>
-        <div class="projet">
-            <!--Icones cliquables de mes projets-->
-            <img src="img/safe.png" alt="Box"><!--Modal au click-->
-        </div>
-        <div class="projet">
-            <!--Icones cliquables de mes projets-->
-            <img src="img/submarine.png" alt="Submarine"><!--Modal au click-->
+            <img src="img/submarine.png" alt="Submarine" class="trigger6">
+            <div class="modal">
+                <div class="modal-content">
+                    <span class="close-button">×</span>
+                    <h3>Chalets et Caviar</h3>
+                    <img src="img/chalets.JPG" alt="Chalets">
+                    <p>Description du site</p>
+                    <button><a href="#">Voir le site</a></button>
+                </div>
+            </div>
         </div>
     </main>
 
-    <footer class="container">
-        <h2 id="contact">Me trouver sur</h2>
-        <a class="social" href="https://twitter.com/shunkashuu1" target="blank"><i class="fab fa-fw fa-twitter"></i></a>
-        <a class="social" href="https://instagram.com/drawingshunn/" target="blank"><i class="fab fa-fw fa-instagram"></i></a>
+    <footer class="container" id="contact" data-spy>
+        <h2>Me trouver sur</h2>
         <a class="social" href="https://www.linkedin.com/in/marion-gajic-1b0929176/" target="blank"><i class="fab fa-fw fa-linkedin-in"></i></a>
         <a class="social" href="https://github.com/Shunkashuu" target="blank"><i class="fab fa-fw fa-github"></i></a>
         <a class="social" href="mailto:marion.gajic@outlook.fr" target="blank"><i class="far fa-fw fa-envelope"></i></a>
-    </footer>
-
-    <section class="container">
+        <a class="social" href="https://twitter.com/shunkashuu1" target="blank"><i class="fab fa-fw fa-twitter"></i></a>
+        <a class="social" href="https://instagram.com/drawingshunn/" target="blank"><i class="fab fa-fw fa-instagram"></i></a>
         <p>Copyright © Marion GAJIC 2020</p>
-    </section>
-
+    </footer>
 
     <!--Script-->
     <script src="https://use.fontawesome.com/releases/v5.12.1/js/all.js" crossorigin="anonymous"></script>
@@ -108,7 +157,7 @@
             })
         })
     </script>
-    <!--<script src="js/index.js"></script>-->
+    <script src="js/index.js"></script>
 
 </body>
 </html>

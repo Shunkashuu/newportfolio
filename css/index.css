@@ -3,17 +3,25 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Poppins';
-    /*background: linear-gradient(90deg, #d53369 0%, #daae51 100%);*/
+    scroll-behavior: smooth;
 }
 
-/*Mobile first*/
+body {
+    background: linear-gradient(90deg, #d53369 0%, #daae51 100%);
+}
 
+/*------Mobile first--------*/
 .container {
     text-align: center;
     margin: 10%;
-    max-width: 100%;   
+    max-width: 100%;
 }
 
+p, h1, h2 {
+    color: #fff;
+}
+
+/*------Nav style--------*/
 nav {
     width: 100%;
     background: #333333;
@@ -32,13 +40,15 @@ ul li {
     padding: 20px;
 }
 
-ul li:hover {
-    background: #e91e63;
+ul li a{
+	text-decoration: none;
+	font-size: 0.9rem;
+    transition: .3s;
+    color: #fff;
 }
 
-ul li a {
-    color: #fff;
-    text-decoration: none;
+ul li a:hover{
+	color: #ff847b;
 }
 
 .toggle {
@@ -55,43 +65,102 @@ ul li a {
     cursor: pointer;
 }
 
-/*header p, h2, h1 {
-    color: #fff;
-}*/
-
+/*-------Main style------*/
 .construction {
     font-size: 30px;
 }
 
 .avatar img {
     margin: 30px auto;
-    width: 250px;
-    height: 250px;
+    width: 200px;
+    height: 200px;
     border-radius: 50%;
 }
 
 .about p {
-    margin: 20px 0;
+    margin: 20px;
 }
 
 .bouton-cv a {
     display: inline-block;
     padding: 10px 20px;
-    background: yellowgreen;
+    background: none;
     border-radius: 6px;
     margin-top: 10px;
     text-decoration: none;
-    font-weight: 600;
+    border: 2px solid #fff;
     color: #fff;
+    transition: .3s;
 }
 
+.bouton-cv a:hover {
+    background: #fff;
+    border: 2px solid #fff;
+    color: #333333;
+    cursor: pointer;
+}
+
+/*------Projects pictures style------*/
 .projet img {
     width: 300px;
     height: 200px;
     border-radius: 20px;
+    cursor: pointer;
 }
 
+.modal {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    visibility: hidden;
+    transform: scale(1.1);
+    transition: visibility 0s linear 0.25s, opacity 0.25s 0s, transform 0.25s;
+}
+
+.modal-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 1rem 1.5rem;
+    width: 24rem;
+    border-radius: 0.5rem;
+}
+
+.modal img {
+    width: 300px;
+    height: 180px;
+}
+
+.close-button {
+    float: right;
+    width: 1.5rem;
+    line-height: 1.5rem;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 0.25rem;
+    background-color: lightgray;
+}
+
+.close-button:hover {
+    background-color: darkgray;
+}
+
+.show-modal {
+    opacity: 1;
+    visibility: visible;
+    transform: scale(1.0);
+    transition: visibility 0s linear 0s, opacity 0.25s 0s, transform 0.25s;
+}
+
+/*------Social buttons style------*/
 .social {
+    margin: 20px 0;
     border-radius: 100%;
     display: inline-flex;
     width: 3.25rem;
@@ -99,8 +168,8 @@ ul li a {
     font-size: 1.25rem;
     justify-content: center;
     align-items: center;
-    border: 2px solid black;
-    color: black;
+    border: 2px solid #fff;
+    color: #fff;
     transition: color 0.15s ease-in-out, 
                 background-color 0.15s ease-in-out, 
                 border-color 0.15s ease-in-out, 
@@ -108,8 +177,10 @@ ul li a {
 }
 
 .social:hover{
-	background: black;
+    background: #fff;
+    color: #333333;
 }
+
 
 @media (max-width:768px) {
     .toggle {
@@ -127,4 +198,8 @@ ul li a {
         display: block;
     }
 }
+
+
+
+
 
