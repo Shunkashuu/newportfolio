@@ -11,12 +11,24 @@ body {
 }
 
 /*------Mobile first--------*/
-.container3,
-.container2,
 .container {
     text-align: center;
-    margin: 10%;
-    max-width: 100%;
+    margin: 5%;
+}
+
+.container2 {
+    background-color: #333333;
+    text-align: center;
+    padding-top: 80px;
+    padding-bottom: 50px;
+    margin: 0;
+}
+
+.container3 {
+    background-color: #D75A62;
+    text-align: center;
+    padding: 50px 0;
+    margin: 0;
 }
 
 p, h1, h2 {
@@ -146,8 +158,8 @@ ul li a:hover{
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
     transition: 0.3s;
     background: #fff;
-    margin: 30px 0;
-    width: 100%;
+    margin: 30px;
+    width: 85%;
 }
 
 .card:hover {
@@ -238,12 +250,28 @@ ul li a:hover{
     ul li a{
         font-size: 15px;
     }
-    
+
+    .container2 {
+        background-color: #333333;
+        text-align: center;
+        padding-top: 80px;
+        padding-bottom: 50px;
+        margin: 0;
+    }
+
+    .container3 {
+        background-color: #D75A62;
+        text-align: center;
+        padding: 50px 0;
+        margin: 0;
+    }
+
     .flex-container {
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
     }
+
     .card {
         border-radius: 20px;
         box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
@@ -258,6 +286,7 @@ ul li a:hover{
         padding: 0 30px;
         padding-top: 30px;
     }
+    
     .divider::before,
     .divider::after{
         min-width: 30%;
@@ -281,11 +310,27 @@ ul li a:hover{
         font-size: 17px;
     }
 
+    .container2 {
+        background-color: #333333;
+        text-align: center;
+        padding-top: 80px;
+        padding-bottom: 50px;
+        margin: 0;
+    }
+
+    .container3 {
+        background-color: #D75A62;
+        text-align: center;
+        padding: 50px 0;
+        margin: 0;
+    }
+    
     .flex-container {
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
     }
+    
     .card {
         border-radius: 20px;
         box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
