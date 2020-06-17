@@ -39,13 +39,21 @@
 
         <div class="about">
             <h2>A propos de moi</h2>
-            <p>Actuellement en formation avec OpenClassrooms pour obtenir le titre de niveau 6
-                Développeur d'application - Frontend, j'ai déjà effectué plusieurs projets qui 
-                seront présents ici.
-            </p>
-            <p>Je suis passionnée par les arts, les jeux-vidéos et depuis toujours par l'informatique. 
-                J'ai commencé ma formation en mars 2020, j'en suis actuellement au 4ème projet sur un total de 9.
-            </p>
+            <div class="divider"><i class="fas fa-star fa-2x"></i></div>
+            <div class="aboutP">
+                <div class="first">
+                    <p>Actuellement en formation avec OpenClassrooms pour obtenir le titre de niveau 6
+                        Développeur d'application - Frontend, j'ai déjà effectué plusieurs projets qui 
+                        seront présents ici.
+                    </p>
+                </div>
+                <div class="second">
+                    <p>Je suis passionnée par les arts, les jeux-vidéos et depuis toujours par l'informatique. 
+                        J'ai commencé ma formation en mars 2020, j'en suis actuellement au 4ème projet sur un total de 9.
+                    </p>
+                </div>
+            </div>
+
             <div class="bouton-cv">
                 <a href="cv.html" target="blank"><i class="fas fa-search"></i>  Voir mon cv</a>
             </div>
@@ -53,86 +61,95 @@
     </header>
 
     <!--Section Portfolio-->
-    <main class="container" id="portfolio" data-spy>
+    <main class="container2" id="portfolio" data-spy>
         <h2>Portfolio</h2>
-        
-        <div class="card">
-            <img src="img/cabin.png" alt="Chalet">
-            <div class="projet">
-                <h3>Chalets et Caviar</h3>
-                <p>Un site fait sous WordPress. Il devait convenir pour de la location et
-                    de la vente de chalets en mode vitrine. Il fallait également créer une
-                    documentation pour la cliente. 
-                </p>
-                <div class="bouton-projet">
-                    <a href="http://chaletscaviar.eu/" target="blank">Voir le site</a>
+        <div class="divider"><i class="fas fa-star fa-2x"></i></div>
+        <section class="flex-container">
+            <div class="card">
+                <div class="projet">
+                    <img src="img/cabin.png" alt="Chalet">
+                    <h3>Chalets et Caviar</h3>
+                    <p>Un site fait sous WordPress. Il devait convenir pour de la location et
+                        de la vente de chalets en mode vitrine. Il fallait également créer une
+                        documentation pour la cliente. 
+                    </p>
+                    <div class="bouton-projet">
+                        <a href="http://chaletscaviar.eu/" target="blank">Voir le site</a>
+                    </div>
                 </div>
             </div>
-        </div>
 
-        <div class="card">
-            <img src="img/cake.png" alt="Cake">
-            <div class="projet">
-                <h3>Croustishop</h3>
-                <p>Croustishop est un site fictif inspiré d'un TP de Graven, 
-                    un youtuber que j'apprécie. Fait en HTML et CSS.</p>
-                <div class="bouton-projet">
-                    <a href="http://croustishop.mariongajic.fr/" target="blank">Voir le site</a>
+            
+            <div class="card">
+                <div class="projet">
+                    <img src="img/circus.png" alt="Circus">
+                    <h3>Festival des films de plein air</h3>
+                    <p>Il était demandé de créer la maquette et le cahier des charges d'un site 
+                        de festival de films en plein air pour une association. 
+                        Fait sur Bootstrap.</p>
+                    <div class="bouton-projet">
+                        <a href="https://festival-des-films.mariongajic.fr/" target="blank">Voir le site</a>
+                    </div>
                 </div>
             </div>
-        </div>
 
-        <div class="card">
-            <img src="img/circus.png" alt="Circus">
-            <div class="projet">
-                <h3>Festival des films de plein air</h3>
-                <p>Il était demandé de créer la maquette et le cahier des charges d'un site 
-                    de festival de films en plein air pour une association. Fait sur Bootstrap.</p>
-                <div class="bouton-projet">
-                    <a href="http://festival-des-films.mariongajic.fr/" target="blank">Voir le site</a>
+            <div class="card">
+                <div class="projet">
+                    <img src="img/safe.png" alt="Safe">
+                    <h3>Solution technique ExpressFood</h3>
+                    <p>A venir. Schémas UML, contexte, classe, modèle de données et séquence 
+                        et base de données pour une application de restauration en ligne ExpressFood.
+                    </p>
+                    <div class="bouton-projet">
+                        <a href="#" target="blank">Voir le site</a>
+                    </div>
                 </div>
             </div>
-        </div>
 
-        <div class="card">
-            <img src="img/game.png" alt="Gamepad">
-            <div class="projet">
-                <h3>Jeu de plateau en tour par tour</h3>
-                <p>A venir. Génération d'une carte, les joueurs peuvent se déplacer et attaquer. 
-                    Utilisation du HTML, CSS et JS.</p>
-                <div class="bouton-projet">
-                    <a href="#" target="blank">Voir le site</a>
+            <div class="card">
+                <div class="projet">
+                    <img src="img/submarine.png" alt="Submarine">
+                    <h3>Générateur de citations</h3>
+                    <p>Projet en cours. Générateur de citations aléatoires en anglais et en français avec une 
+                        séléction de phrases de 1 à 5. Les citations sont faites avec 3 bouts de phrases.
+                        Utilisation d'HTML, CSS, JS et JSON. 
+                    </p>
+                    <div class="bouton-projet">
+                        <a href="https://citations.mariongajic.fr/" target="blank">Voir le site</a>
+                    </div>
                 </div>
             </div>
-        </div>
 
-        <div class="card">
-            <img src="img/safe.png" alt="Safe">
-            <div class="projet">
-                <h3>Générateur de citations</h3>
-                <p>Générateur de citations aléatoires en anglais et en français avec une 
-                    séléction de phrases de 1 à 5. Utilisation d'HTML, CSS, JS et JSON. 
-                    Projet en cours.</p>
-                <div class="bouton-projet">
-                    <a href="http://citations.mariongajic.fr/" target="blank">Voir le site</a>
+            <div class="card">
+                <div class="projet">
+                    <img src="img/game.png" alt="Gamepad">
+                    <h3>Jeu de plateau en tour par tour</h3>
+                    <p>A venir. Génération d'une carte, les joueurs peuvent se déplacer et attaquer, avec des armes
+                        à ramasser sur la carte et un système de points de vie.
+                        Utilisation du HTML, CSS et JS.</p>
+                    <div class="bouton-projet">
+                        <a href="#" target="blank">Voir le site</a>
+                    </div>
                 </div>
             </div>
-        </div>
 
-        <div class="card">
-            <img src="img/submarine.png" alt="Submarine">
-            <div class="projet">
-                <h3>A venir</h3>
-                <p>A venir</p>
-                <div class="bouton-projet">
-                    <a href="#" target="blank">Voir le site</a>
+            <div class="card">
+                <div class="projet">
+                    <img src="img/cake.png" alt="Cake">
+                    <h3>Croustishop</h3>
+                    <p>Croustishop est un site fictif inspiré d'un TP de Graven, un youtuber que j'apprécie. Il a créé une série de TP, j'ai suivi l'un d'eux. 
+                        Je l'ai ensuite ajusté à mon goût. 
+                        Fait en HTML et CSS.</p>
+                    <div class="bouton-projet">
+                        <a href="https://croustishop.mariongajic.fr/" target="blank">Voir le site</a>
+                    </div>
                 </div>
             </div>
-        </div>
+        </section>
 
     </main>
-    
-    <footer class="container" id="contact" data-spy>
+
+    <footer class="container3" id="contact" data-spy>
         <h2>Me trouver sur</h2>
         <a class="social" href="https://www.linkedin.com/in/marion-gajic-1b0929176/" target="blank"><i class="fab fa-fw fa-linkedin-in"></i></a>
         <a class="social" href="https://github.com/Shunkashuu" target="blank"><i class="fab fa-fw fa-github"></i></a>
