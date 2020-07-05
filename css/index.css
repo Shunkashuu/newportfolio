@@ -298,6 +298,7 @@ ul li a:hover{
 
     .aboutP {
         margin: 10px 10px;
+        text-align: justify;
     }
 }
 
@@ -351,6 +352,7 @@ ul li a:hover{
 
     .aboutP {
         margin: 10px 10px;
+        text-align: justify;
     }
 }
 
@@ -385,6 +387,7 @@ ul li a:hover{
         justify-content: center;
         max-width: 100%;
         margin: 40px 200px;
+        text-align: justify;
     }
     
     main h2 {
