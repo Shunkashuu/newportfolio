@@ -18,4 +18,4 @@ Don't use for commercial use, only for testing.
 
 ## Status
 
-the project is still under construction.
+The project is still under construction.
